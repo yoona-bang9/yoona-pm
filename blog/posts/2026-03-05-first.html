@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CTA 개선 프로젝트 정리 — 방유나</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    :root{--white:#fff;--off:#f6f5f2;--ink:#0f0f0f;--mid:#5a5a5a;--soft:#a0a0a0;--line:#e6e6e6;--blue:#1540a0;--gutter:60px;--max-w:820px}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Pretendard',-apple-system,sans-serif;background:var(--white);color:var(--ink);line-height:1.9}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--max-w);margin:0 auto;padding:48px var(--gutter)}
+    .top{padding-bottom:18px;border-bottom:1px solid var(--line);margin-bottom:24px}
+    .crumb{display:flex;gap:10px;font-size:13px;color:var(--mid);margin-bottom:10px}
+    h1{font-size:28px;letter-spacing:-0.03em;line-height:1.2}
+    .meta{margin-top:10px;color:var(--soft);font-size:13px}
+    .tag{color:var(--blue);font-weight:700}
+    .content{font-size:15px}
+    .content h2{font-size:16px;margin:26px 0 8px;letter-spacing:-0.02em}
+    .content p{margin:8px 0;color:var(--mid)}
+    .box{background:var(--off);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:14px 0}
+    ul{padding-left:18px;color:var(--mid)}
+    li{margin:6px 0}
+    @media (max-width:900px){:root{--gutter:20px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div class="crumb">
+        <a href="/blog/">Blog</a><span>·</span><span class="tag">Case Study</span>
+      </div>
+      <h1>[샘플] CTA 개선 프로젝트를 PM 관점으로 정리하는 법</h1>
+      <div class="meta">2026-03-05 · 방유나</div>
+    </div>
+
+    <div class="content">
+      <p>지원용 PM 블로그/포트폴리오에 바로 넣을 수 있는 케이스 스터디 템플릿 샘플입니다. (나중에 실제 프로젝트 내용으로 교체하면 돼요)</p>
+
+      <h2>1) Problem</h2>
+      <div class="box">
+        <ul>
+          <li>옵션 선택 후 구매 CTA를 찾지 못하는 이탈이 발생</li>
+          <li>딥링크 진입 케이스에 따라 네비게이션 스택이 꼬이는 이슈가 존재</li>
+        </ul>
+      </div>
+
+      <h2>2) Hypothesis</h2>
+      <p>CTA의 “가시성/접근성”을 개선하면, 옵션 선택 이후 구매 흐름으로 자연스럽게 이어질 것이다.</p>
+
+      <h2>3) Solution</h2>
+      <div class="box">
+        <ul>
+          <li>딥링크 진입 시나리오 6종 정리</li>
+          <li>하단 고정 CTA가 네비게이션과 충돌하지 않도록 레이아웃 방식 변경</li>
+          <li>엣지케이스(무한 스택/상태 sync) 예외 처리 정의</li>
+        </ul>
+      </div>
+
+      <h2>4) Result</h2>
+      <p>이탈률이 안정화되었고(예: -6%), 이후 A/B 테스트 및 쿠폰 노출 확장 실험의 기반을 만들었다.</p>
+
+      <h2>5) Lesson Learned</h2>
+      <p>CTA 노출 개선만으로 클릭이 보장되지는 않는다. 가격/리뷰/신뢰도 정보와 같이 “결정에 필요한 정보”를 함께 설계해야 전환이 올라간다.</p>
+    </div>
+  </div>
+</body>
+</html>
