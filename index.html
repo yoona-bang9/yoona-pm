@@ -1,79 +1,51 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<title>Yoona PM Portfolio</title>
-<style>
-body{
-font-family: -apple-system,BlinkMacSystemFont,sans-serif;
-max-width:900px;
-margin:60px auto;
-line-height:1.6;
-color:#222;
-padding:0 20px;
-}
-
-h1{
-font-size:40px;
-margin-bottom:10px;
-}
-
-h2{
-margin-top:40px;
-border-bottom:1px solid #eee;
-padding-bottom:8px;
-}
-
-.project{
-margin-top:20px;
-}
-
-.project-title{
-font-weight:600;
-font-size:18px;
-}
-
-.project-desc{
-color:#555;
-margin-top:6px;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog — 방유나</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    :root{--white:#fff;--off:#f6f5f2;--ink:#0f0f0f;--mid:#5a5a5a;--soft:#a0a0a0;--line:#e6e6e6;--blue:#1540a0;--gutter:60px;--max-w:900px}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Pretendard',-apple-system,sans-serif;background:var(--white);color:var(--ink);line-height:1.7}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--max-w);margin:0 auto;padding:48px var(--gutter)}
+    .top{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+    h1{font-size:28px;letter-spacing:-0.03em}
+    .sub{color:var(--mid);font-size:14px}
+    .back{font-size:13px;color:var(--mid)}
+    .list{margin-top:28px;display:flex;flex-direction:column;gap:10px}
+    .card{border:1px solid var(--line);border-radius:8px;padding:18px;transition:background .2s}
+    .card:hover{background:var(--off)}
+    .meta{display:flex;gap:10px;align-items:center;color:var(--soft);font-size:12px;margin-bottom:6px}
+    .tag{color:var(--blue);font-weight:700}
+    .title{font-size:16px;font-weight:700;letter-spacing:-0.02em;margin-bottom:6px}
+    .desc{color:var(--mid);font-size:13px}
+    @media (max-width:900px){:root{--gutter:20px}}
+  </style>
 </head>
-
 <body>
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <h1>Blog</h1>
+        <p class="sub">PM 케이스/사고 과정을 기록합니다.</p>
+      </div>
+      <!-- ✅ blog/에서 상위(포트폴리오)로 -->
+      <a class="back" href="../">← Portfolio</a>
+    </div>
 
-<h1>Yoona Bang</h1>
-<p>Product Manager</p>
-
-<a href="blog/">Blog</a>
-
-<h2>About</h2>
-<p>
-B2B SaaS 기반 건강 데이터 솔루션에서 Product Manager로 일하고 있습니다.  
-데이터 기반 제품 기획과 사용자 경험 설계를 중심으로 문제를 해결합니다.
-</p>
-
-<h2>Projects</h2>
-
-<div class="project">
-<div class="project-title">대화형 추천 시스템 기획</div>
-<div class="project-desc">
-사용자 데이터를 기반으로 대화형 방식의 추천 시스템 UX 및 정책 설계
-</div>
-</div>
-
-<div class="project">
-<div class="project-title">건강 측정 데이터 대시보드</div>
-<div class="project-desc">
-맥박, 산소포화도, 스트레스 지표 등 건강 데이터를 시각화하는 대시보드 기획
-</div>
-</div>
-
-<h2>Contact</h2>
-<p>
-Email: bangyuna9@gmail.com  
-LinkedIn: https://www.linkedin.com/in/yuna-b-883579314/
-</p>
-
+    <div class="list">
+      <!-- ✅ blog/index.html 기준: posts/ 로 이동 -->
+      <a class="card" href="posts/2026-03-05-first.html">
+        <div class="meta">
+          <span>2026-03-05</span><span>·</span><span class="tag">Case Study</span>
+        </div>
+        <div class="title">[샘플] CTA 개선 프로젝트를 PM 관점으로 정리하는 법</div>
+        <div class="desc">문제 → 가설 → 설계 → 결과 → 배운 점까지, 포트폴리오에 바로 넣는 글 구조.</div>
+      </a>
+    </div>
+  </div>
 </body>
 </html>
